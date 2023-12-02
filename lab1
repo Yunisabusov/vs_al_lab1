@@ -1,0 +1,14 @@
+def hesabla_cemi(epsilon):
+    S = 0.0
+    n = 1
+    while True:
+        term = 1 / n
+        S += term
+        n += 1
+        if term < epsilon:
+            break
+    return S
+
+epsilon = 0.1
+cemi = hesabla_cemi(epsilon)
+print(f"S cəmi: {cemi}")
